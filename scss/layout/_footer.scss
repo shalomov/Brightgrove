@@ -1,0 +1,203 @@
+#footer {
+    background-color: #f5f6f8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include media('>=desktop') {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    @include media('>=fullscreen') {
+        padding-top: 115px;
+        padding-bottom: 115px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+.footer-logo {
+    display: inline-block;
+    max-width: 183px;
+    margin-bottom: 10px;
+    @include media('>=desktop') {
+        margin-bottom: 23px;
+    }
+}
+.footer-title {
+    color: #233488;
+    font-family: $bitter;
+    font-size: 16px;
+    margin-bottom: 5px;
+    @include media('>=desktop') {
+        margin-bottom: 20px;
+    }
+}
+.footer-desc {
+    margin-bottom: 20px;
+    @include media('>=desktop') {
+        margin-bottom: 40px;
+    }
+}
+.footer-list {
+    padding-left: 0;
+    margin-bottom: 10px;
+    @include media('>=desktop') {
+        margin-bottom: 0;
+    }
+}
+.footer-link {
+    color: $textColor;
+    font-weight: 300;
+    line-height: 25px;
+    @include media('>=desktop') {
+        line-height: 36px;
+    }
+    &:hover {
+        color: #c5c5c5;
+    }
+}
+#footer-form {
+    .section-link {
+        line-height: 35px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            padding-left: 5px;
+            @include media('>=widescreen') {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+#footer{
+    .was-validated {
+        .footer-form_email {
+            padding-right: 1rem;
+        }
+    }
+}
+.footer-form_email {
+    border-radius: 25px;
+    border: 1px solid #373737;
+    color: #373737;
+    font-family: $bitter;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 14px;
+    @include media('>=desktop') {
+        max-width: 260px;
+    }
+    @include media('>=widescreen') {
+        font-size: $rem-base;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.social-item {
+    &:not(:first-child) {
+        a {
+            margin-left: 30px;
+        }
+    }
+    a {
+        display: inline-block;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    .facebook {
+        background: url('../images/social-icons.png') no-repeat -16px -24px;
+        width: 9px;
+        height: 20px;
+    }
+    .twitter {
+        background: url('../images/social-icons.png') no-repeat -58px -64px;
+        width: 25px;
+        height: 20px;
+    }
+    .instagram {
+        background: url('../images/social-icons.png') no-repeat -63px -24px;
+        width: 20px;
+        height: 20px;
+    }
+    .telegram {
+        background: url('../images/social-icons.png') no-repeat -16px -64px;
+        width: 20px;
+        height: 20px;
+    }
+}
+.copyright {
+    background-image: url('../images/background-footerbar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-bar {
+    .social-nav ,
+    .copyright-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include media('>=desktop') {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+.copyright-nav {
+    .copyright-list {
+        padding-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        @include media('>=desktop') {
+            flex-direction: row;
+        }
+    }
+}
+.copyright-item {
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: center;
+    @include media('>=tablet') {
+        text-align: left;
+    }
+    @include media('>=desktop') {
+        margin-bottom: 0;
+    }
+    &:not(:first-child) {
+        margin-left: 0;
+        @include media('>=desktop') {
+            margin-left: 25px;
+        }
+        @include media('>=widescreen') {
+            margin-left: 65px;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+        @include media('>=widescreen') {
+            margin-right: 250px;
+        }
+    }
+    a {
+        color: #fff;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Brightgrove</title>
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">  
+	<link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous" defer></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+	<script src="js/jquery.main.js" defer></script>
+	<script src="js/jquery.nice-select.min.js" defer></script>
+	<script src="js/slick/slick.min.js" defer></script>
+	<script src="js/main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<nav class="navbar navbar-expand-lg navbar-light top-nav fixed-top">
+							<a class="navbar-brand" href="#">
+								<img src="images/logo.png" alt="Brightgrove">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="#">Home</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											ALLES OVER WOZ
+										</a>
+										<div class="dropdown-menu" aria-labelledby="dropdown-menu-link">
+											<a class="dropdown-item" href="#">Wat is WOZ</a>
+											<a class="dropdown-item" href="#">WOZ verlagen</a>
+											<a class="dropdown-item" href="#">WOZ verhogen</a>
+											<a class="dropdown-item" href="#">WOZ bezwaar</a>
+											<a class="dropdown-item" href="#">WOZ nieuws</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">WOZ-NIEUWS</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Gemeentes</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">OVER ONS</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="banner">
+				<div class="banner-content_wrapp">
+					<div class="banner-text">
+						<h1 class="banner-title">1,6 miljoen te hoge WOZ-waardes in 2019</h1>
+						<p class="banner-desc">
+							Wist u dat er een grote kans bestaat dat u te veel belasting betaalt door een te hoge WOZ-waarde? Dat blijkt uit ons landelijk WOZ-onderzoek. Controleer uw WOZ-waarde eenvoudig en snel met onze gratis WOZ Check. U ziet dan direct hoeveel u kunt besparen. 
+						</p>
+						<a href="#" class="section-link">Doe de WOZ Check</a>
+						<a href="#" class="section-link light-btn">Bekijk ons onderzoek</a>
+					</div>
+					<div class="banner-form">
+						<h2 class="banner-form_title">Doe hier de gratis WOZ Check.</h2>
+						<p class="banner-form_desc">Een taxatie van de WOZ-waarde van uw woning binnen enkele stappen. Bekijk hier direct uw mogelijke besparing en maak eventueel gratis bezwaar.</p>
+						<form id="form-woz">
+							<div class="form-group">
+								<label for="select-form">Woonsituatie:</label>
+								<select class="form-control" id="select-form" required>
+									<option disabled="" selected="" value="" hidden>Ik ben de (mede-) eigenaar.</option>
+									<option>1 option</option>
+									<option>2 option</option>
+								</select>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<label for="input-postcode">Postcode</label>
+									<input type="text" class="form-control" id="input-postcode" name="input-postcode" pattern="[0-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="0000 AA" required>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="input-address">Huisnummer</label>
+									<input type="text" class="form-control" id="input-address" name="input-address" pattern="[0-9]{,2}" placeholder="00" required>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="toevoeging">Toevoeging</label>
+									<input type="text" class="form-control" id="toevoeging" name="toevoeging" placeholder="-">
+								</div>
+							</div>
+							<button type="submit" class="section-link send-form">Doe de gratis check</button>
+						</form>
+					</div>
+				</div>
+				<div class="banner-slick">
+					<div>
+						<img src="images/banner-item1.jpg" alt="banner-item">
+					</div>
+					<div>
+						<img src="images/banner-item2.jpg" alt="banner-item">
+					</div>
+				</div>
+			</section>
+
+			<section class="about-woz">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6">
+							<h2 class="section-title">
+								<span class="first-title">Een Eerlijke WOZ</span>
+								<span class="second-title">Een Eerlijke WOZ</span>
+							</h2>
+							<p>
+								U betaalt ieder jaar belasting op basis van de WOZ-waarde van uw huis. Maar zonder een grondige taxtie van uw WOZ-waarde weet u eigenlijk niet zeker of u te veel betaalt. 
+							</p>
+							<p>
+								Met de WOZ Check van Eerlijke WOZ doet u gratis en snel een WOZ-taxatie van uw woning op basis van een door ons zorgvuldig ontwikkeld taxatiesysteem. Wijkt de uitkomst sterk af van uw WOZ-waarde? Dan is uw WOZ-waarde waarschijnlijk onjuist en kunt u direct gratis bezwaar maken.
+							</p>
+						</div>
+						<div class="col-xl-6">
+							<div class="row">
+								<div class="col-lg-6 custom-margin ">
+									<div class="circle timer"></div>
+									<div class="content-wrapp">
+										<h3 class="section-subtitle">Binnen één minuutje</h3>
+										<p>
+											Omdat wij niet meer informatie vragen dan strikt noodzakelijk is, bent u zo klaar. Uw WOZ-waarde controleren en aanmelden voor een bezwaar ging nog nooit zo snel.
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6 custom-margin ">
+									<div class="circle money"></div>
+									<div class="content-wrapp">
+										<h3 class="section-subtitle">Volledig gratis</h3>
+										<p>
+											Er worden voor onze diensten nooit kosten in rekening gebracht door ons of uw gemeente. Of het nu gaat om de WOZ Check, een WOZ bezwaar of een eventuele beroepsprocedure.
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="circle sun"></div>
+									<div class="content-wrapp">
+										<h3 class="section-subtitle">Volledig vrijblijvend</h3>
+										<p>
+											U kunt uw inschrijving bij ons altijd direct stopzetten. Op die manier weten wij zeker dat u altijd tevreden over onze dienstverlening. 
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="circle square"></div>
+									<div class="content-wrapp">
+										<h3 class="section-subtitle">Transparant & persoonlijk</h3>
+										<p>
+											Informatie en communicatie van Eerlijke WOZ is altijd duidelijk en begrijpelijk. Zo blijft u altijd goed geïnformeerd over onze adviezen en procedures. 
+										</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="links-wrapp">
+										<a href="#" class="section-link">Onze werkwijze</a>
+										<a href="#" class="section-link dark-btn">Proceskostenvergoeding</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="customers">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2 class="section-title">
+								<span class="first-title">Onze klanten</span>
+								<span class="second-title">Onze klanten</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row customers-carousel">
+						<div class="col-md-6">
+							<p class="customers-comment">
+								“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu” eu, pretium quis, sem. Nulla consequat massa quis enim. 
+								“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu” eu, pretium quis, sem. Nulla consequat massa quis enim. 
+								“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu” eu, pretium quis, sem. Nulla consequat massa quis enim. 
+							</p>
+							<cite class="customers-author">- Ridder Drost, Utrecht</cite>
+						</div>
+						<div class="col-md-6">
+							<img src="images/customer-item1.jpg" class="img-customer" alt="customer">
+							<div class="row">
+								<div class="col-md-6">
+									<h2 class="customers-title">Iedereen verdient een eerlijke WOZ</h2></div>
+								<div class="col-md-6">
+									<p class="customers-desc">Wij voeren al jaren succesvolle bezwaarprocedures tegen WOZ-waardes van woningen. Dankzij ons zorgvuldig ontwikkelde taxatiesysteem en continue verbeteringen stellen wij veel klanten tevreden. We zijn benieuwd naar uw feedback.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p class="customers-comment">
+								“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu” eu, pretium quis, sem. Nulla consequat massa quis enim. 
+							</p>
+							<cite class="customers-author">- Ridder Drost, Utrecht</cite>
+						</div>
+						<div class="col-md-6">
+							<img src="images/customer-item2.jpg" class="img-customer" alt="customer">
+							<div class="row">
+								<div class="col-md-6">
+									<h2 class="customers-title">Iedereen verdient een eerlijke WOZ</h2></div>
+								<div class="col-md-6">
+									<p class="customers-desc">Wij voeren al jaren succesvolle bezwaarprocedures tegen WOZ-waardes van woningen. Dankzij ons zorgvuldig ontwikkelde taxatiesysteem en continue verbeteringen stellen wij veel klanten tevreden. We zijn benieuwd naar uw feedback.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="price">
+				<div class="container">
+					<div class="row ">
+						<div class="col-md-6 col-xl-3 d-flex align-items-stretch">
+							<div class="price-item">
+								<img src="images/house_single.png" alt="house_single">
+								<h3>Eigen Woning</h3>
+								<p>Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB, watersysteemheffing en inkomstenbelasting:</p>
+								<h4>€ 177 tot € 296</h4>
+								<a href="#" class="check-link">Gratis check <span class="icon-ctrl custom-icon"></span></a>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 d-flex align-items-stretch">
+							<div class="price-item">
+								<img src="images/houses_x2.png" alt="houses_x2">
+								<h3>Erfenis of schenking</h3>
+								<p>Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB, watersysteemheffing en erf- of schenkbelasting:</p>
+								<h4>€ 6.160 tot € 9.480</h4>
+								<a href="#" class="check-link">Gratis check <span class="icon-ctrl custom-icon"></span></a>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 d-flex align-items-stretch">
+							<div class="price-item">
+								<img src="images/houses_3.png" alt="houses_3">
+								<h3>Tweede woning</h3>
+								<p>Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB, watersysteemheffing en inkomstenbelasting:</p>
+								<h4>€ 781 tot € 1.239</h4>
+								<a href="#" class="check-link">Gratis check <span class="icon-ctrl custom-icon"></span></a>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 d-flex align-items-stretch">
+							<div class="price-item">
+								<img src="images/houses_1.png" alt="houses_1">
+								<h3>Verhuurder</h3>
+								<p>Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB, watersysteemheffing en inkomstenbelasting:</p>
+								<h4>€ 426 tot € 741</h4>
+								<a href="#" class="check-link">Gratis check <span class="icon-ctrl custom-icon"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="add-info">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6">
+							<h2 class="add-info_title">Het Jaarlijkse WOZ Onderzoek.</h2>
+							<p>Eerlijke WOZ heeft voor het jaar 2019 onderzocht of de WOZ-waarde van woningen in Nederland juist zijn. </p>
+							<p>Op basis van ons taxatiesysteem, dat wij conform de Wet WOZ en jurisprudentie hebben ontworpen, hebben wij de eerlijke WOZ-waarde berekend en die vergeleken met de WOZ-waarde van de gemeente. 
+							Bij een grote afwijking nemen wij aan dat de WOZ-waarde zoals door gemeente is vastgesteld onjuist is. </p>
+							<a href="#" class="section-link">Bekijk de uitkomsten</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 order-0 col-md-3 col-lg-3">
+							<a href="#" class="footer-logo">
+								<img src="images/logo.png" alt="footer logo">
+							</a>
+							<p>Iedereen verdient een eerlijke WOZ-waarde. Met onze WOZ Check voorkomt u gratis en eenvoudig dat u te veel betaalt.</p>
+						</div>
+						<div class="col-6 order-1 order-lg-0 col-sm-4 col-lg-2">
+							<h3 class="footer-title">Eerlijke WOZ</h3>
+							<nav class="footer-nav">
+								<ul class="footer-list">
+									<li class="footer-item">
+										<a href="#" class="footer-link">Eerlijke WOZ</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">WOZ-Nieuws</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">Gemeentes</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">Over ons</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-6 order-1 order-lg-0 col-sm-4 col-lg-2">
+							<h3 class="footer-title">Over WOZ</h3>
+							<nav class="footer-nav">
+								<ul class="footer-list">
+									<li class="footer-item">
+										<a href="#" class="footer-link">Wat is WOZ</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">WOZ Verlagen</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">WOZ Verhogen</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">WOZ Bezwaar</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-6 order-1 order-lg-0 col-sm-4 col-lg-2">
+							<h3 class="footer-title">Handige Links</h3>
+							<nav class="footer-nav">
+								<ul class="footer-list">
+									<li class="footer-item">
+										<a href="#" class="footer-link">Veelgestelde vragen</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">Jaarlijks WOZ-onderzoek</a>
+									</li>
+									<li class="footer-item">
+										<a href="#" class="footer-link">Doe de gratis WOZ-check</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-6 order-0 col-md-6 col-lg-3">
+							<h3 class="footer-title">Inschrijven nieuwsbrief</h3>
+							<p class="footer-desc">Blijf op de hoogte over belangrijk WOZ nieuws en onze dienstverlening.</p>
+							<form id="footer-form">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="email" class="footer-form_email form-control" placeholder="Uw email..." required>
+									</div>
+									<div class="form-group col-md-6">
+										<button type="submit" class="section-link send-email">Verzenden <span class="icon-arrow-right2"></span></button>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bar">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 align-self-md-center col-lg-4 col-xl-2">
+							<nav class="social-nav">
+								<ul class="social-list">
+									<li class="social-item"><a href="#" class="facebook" target="_blank"></a></li>
+									<li class="social-item"><a href="#" class="twitter" target="_blank"></a></li>
+									<li class="social-item"><a href="#" class="instagram" target="_blank"></a></li>
+									<li class="social-item"><a href="#" class="telegram" target="_blank"></a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-6 col-lg-8 col-xl-10 copyright">
+							<nav class="copyright-nav">
+								<ul class="copyright-list">
+									<li class="copyright-item">
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li class="copyright-item">Algemene Voorwaarden</li>
+									<li class="copyright-item">&copy; Copyright 2019, Eerlijke WOZ B.V.</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

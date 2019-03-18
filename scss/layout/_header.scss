@@ -1,0 +1,89 @@
+#header {
+    box-shadow: 2px 6px 14px 6px rgba(0, 0, 0, 0.06);
+    z-index: 2;
+}
+.top-nav {
+    padding: 0;
+    height: auto;
+    background-color: #fff;
+    @include media('>=desktop') {
+        height: 86px;
+    }
+    .navbar-nav {
+        background-color: #fff;
+        padding-bottom: 10px;
+        @include media('>=desktop') {
+            padding-bottom: 0;
+        }
+        @include media('>=widescreen') {
+            padding-right: 50px;
+        }
+        @include media('>=fullscreen') {
+            padding-right: 105px;
+        }
+        .nav-link {
+            text-transform: uppercase;
+            letter-spacing: 0.88px;
+            color: $navColor;
+            padding: 5px 15px;
+            font-size: 14px;
+            font-family: $open-sans;
+            @include media('>=desktop') {
+                padding: 10px;
+            }
+            @include media('>=widescreen') {
+                font-size: $rem-base;
+                padding: 16px;
+            }
+            &:hover {
+                color: $navColorHover;
+            }
+            &.dropdown-toggle {
+                &:after {
+                    color: #233488;
+                }
+            }
+        }
+    }
+    .navbar-brand {
+        margin-left: 10px;
+        margin-right: 10px;
+        @include media('>=desktop') {
+            margin-left: 40px;
+        }
+        img {
+            max-width: 150px;
+            @include media('>=desktop') {
+                max-width: 232px;
+            }
+        }
+    }
+    .navbar-toggler {
+        margin-right: 15px;
+        padding: 5px;
+        font-size: 1rem;
+        &:focus {
+            outline: none;
+        }
+    }
+    .nav-item {
+        .dropdown-menu {
+            border: none;
+        }
+        .dropdown-item {
+            color: $navColor;
+            font-family: $open-sans;
+            &:hover {
+                color: $navColorHover;
+            }
+        }
+        .dropdown-item{
+            &:focus {
+                background-color: transparent;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
